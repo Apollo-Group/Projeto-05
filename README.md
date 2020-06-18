@@ -1,6 +1,6 @@
 <img alt="Header" src="/assets/header.jpeg" />
 <h3 align="center">
-  Desafio 4: Crie uma aplicação web que consuma a API criada no Projeto-03.
+  Desafio 5: Construa uma API utilizando TDD.
 </h3>
 
 <blockquote align="center">
@@ -22,52 +22,31 @@
 
 ## Objetivo:
 
-Criar uma plataforma web que irá consumir a API construída no Projeto-03. Nessa plataforma os Donos de Restaurantes e Clientes poderāo interagir.
+Construa uma API REST aplicando testes (TDD) desde o princípio. Nessa aplicaçāo o usuário poderá escrever posts em um blog e ler os posts de outros usuários.
 
-### Funcionalidades Geral (Dono do Restaurante e Cliente):
-- Permita que um usuário se autentique em sua aplicação utilizando e-mail e senha.
-- Permita que novos usuários se cadastrem em sua aplicação utilizando nome, e-mail e senha.
-- Permita que os usuário atualizem seus dados de cadastro.
-- Realize a validação dos dados de entrada.
+### Testes:
+- `should be able to create a user` -> com os campos de Nome, Email, Idade e Senha. E retornando um usuário.
+- `should be able to list users` -> Retornando um array de usuários.
+- `should be able to update a user (your own account)` -> com os campos de Nome, Email, Idade e Senha. E retornando um usuário.
+- `should be able to delete a user (your own account)` 
 
-Na autenticaçāo do usuário, perguntar se ele é Dono de Restaurante ou Cliente. Se for Dono de Restaurante seguir para a Home do Dono de Restaurante, se for cliente, seguir para a Home do Cliente.
+- `should be able to user create a post` -> com os campos de Titulo, Sub-titulo e Texto. E retornando um post.
+- `should be able to user list posts` -> Retornando um array de posts.
+- `should be able to user read a post` -> Retornando um post específico.
+- `should be able to user update your own post` -> com os campos de Titulo, Sub-titulo e Texto. E retornando um post.
+- `should be able to user delete your own post`
 
-### Funcionalidades (Dono do Restaurante):
-- Cadastrar Restaurante (nome, imagem, descriçāo, segmento).
-- Cadastrar Cardápio do Restaurante (nome do prato, valor do prato).
-- Listar todas as reservas do seu restaurante.
-- Clicar na reserva confirmada para ver qual pedido foi feito e outras informacoes. 
-
-### Funcionalidades (Cliente):
-- Listar todos os restaurantes.
-- Escolher um restaurante e fazer o agendamento da reserva. Escolhendo a data, horário e o prato.
-- Listar todos os agendamentos realizados de um único usuário, iniciando pela data mais próxima.
-- O cancelamento só poderá ser feito com pelo menos 24 horas de antecedência da reserva.
-- Assim que o usuário confirmar ou cancelar uma reserva, um aviso por e-mail é enviado para o dono do restaurante.
+#### Observaçāo:
+- Pode ser utilziado qualquer banco de dados, apenas nos envie os dados de acesso ao banco.
+- Pode ser utilizado um json server.
 
 ### Conhecimento em:
 
-Qualquer linguagem ou framework front-end.
+Qualquer linguagem back-end e TDD.
 
 ### Importante:
 
 Código limpo e comentado sāo requisitos do desafio.
-
-
-## :pencil2: Telas e Layout
-
-<p align="center">
-  <img src="./assets/restaurant.jpg" width=600>
-</p>
-
-
-- Geral: Cadastro, Login na Plataforma, Minha Conta.
-- Cliente: Listagem dos restaurantes, Página do Restaurante, Página de confirmaçāo da reserva, Listagem das reservas realizadas, Página de Detalhe da Reserva.
-- Dono de Restaurante: Cadastro do Restaurante, Cadastro do Cardápio, Listagem das Reservas, Página de Detalhe da Reserva.
-
-Clique para ver o <a href="https://github.com/Apollo-Group/Projeto-02-Template" target="_blank" rel="noopener noreferrer">
-Layout
-</a> no Figma e utilizar os componentes dos Layout.
 
 
 ## :tada: Entrega
